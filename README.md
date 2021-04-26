@@ -12,6 +12,9 @@ For the purpose of this coding example I did not include any front end JavaScrip
   ![Register planet](/images/registerplanet.PNG)
   
   4. Start the auction by calling the initiateAuction function using the newly created token ID (in this case, 1)
+
+  ![Initiate auction](/images/initiate.PNG)
+
   5. Submit a bid by calling the "bid" function using the token ID as the input, along with adding a message value to the call
 
   ![Submit a bid](/images/bid.PNG)
