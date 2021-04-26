@@ -6,7 +6,14 @@ This repository is designed for minting ERC721 tokens and using a simple marketp
 ### Instructions
 For the purpose of this coding example I did not include any front end JavaScript scripts to deploy to the mainnet or testnet via CLI. Instead, I recommend using Remix to sample these contracts. 
   1. First, deploy the PlanetMarket contract. 
-  2. Use the PlanetMarkets's contract address to deploy the PlanetAuction. 
+  2. Use the PlanetMarkets's contract address as the beneficiary to deploy the PlanetAuction. 
+
+  ![Register planet](/images/registerplanet.PNG)
+
+  4. Back in PlanetMarket, call the registerPlanet function with a planet's URI
  
   ![Submit a Bid](/images/submitbid.PNG)
-  3. To submit a bid, paste in the sender's address and add a value to your message that you would like to bid. 
+  
+  3. To submit a bid within PlanetAuction, paste in the sender's address in the submitBid function and add a value to your message that you would like to bid. 
+    - Once your bid is submitted you can use the highestBid and highestBidder functions to retrieve your bid info, or to see if you've been outbid
+  
